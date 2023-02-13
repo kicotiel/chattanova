@@ -1,6 +1,5 @@
 package com.woof.chattanova.handlers;
 
-import com.woof.chattanova.ChattaNovaMain;
 import com.woof.chattanova.gui.SecondChatGui;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
@@ -70,7 +69,6 @@ public class ServerChatHandler {
         List<ITextComponent> siblings = originalComponent.getSiblings();
         List<ITextComponent> returnList = new ArrayList<>();
         if(siblings.isEmpty()){
-            ChattaNovaMain.LOGGER.info("Siblings were empty!");
             return new ArrayList<>(modifiedSplitter(maxWidth, originalComponent, font));
         }
 
