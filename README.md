@@ -7,6 +7,7 @@ This is a nifty little mod that splits (future) configurable chats from the stan
 That's about it!
 
 ## TO-DO:
+- **BUGFIX: Remove reliance on listMerger to prevent excessively long words from being broken up with an unnecessary space**
 - **Add filter configuration**
 - **Add a fancy UI**
 - **Add some functionality to create multiple windows each with different filters**

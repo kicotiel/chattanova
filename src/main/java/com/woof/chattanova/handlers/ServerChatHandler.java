@@ -149,7 +149,7 @@ public class ServerChatHandler {
     private static ITextComponent listMerger(List<ITextComponent> list, Style style){
         TextComponent returnComponent = new StringTextComponent("");
         for(int i = list.size()-1; i >= 0; i--){
-            returnComponent.append(list.get(i)).withStyle(style);
+            returnComponent.append(list.get(i)).withStyle(style).append(" ");
         }
         return returnComponent;
     }
