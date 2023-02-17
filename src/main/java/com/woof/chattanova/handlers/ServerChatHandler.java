@@ -80,7 +80,7 @@ public class ServerChatHandler {
             Style siblingStyle = sibling.getStyle();
             int siblingWidth = font.width(sibling);
 
-            if(maxWidth - runningWidth < maxWidth * 0.2){
+            if(maxWidth - runningWidth < maxWidth * 0.1){
                 returnList.add(0, storageComponent);
                 storageComponent = new StringTextComponent("");
                 runningWidth = 0;
