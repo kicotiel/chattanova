@@ -89,6 +89,9 @@ public class ServerChatHandler {
             if(runningWidth + siblingWidth <= maxWidth){
                 runningWidth += siblingWidth;
                 storageComponent.append(sibling); //this may need to have withStyle added
+                if(finalChecker == siblings.size()){
+                    returnList.add(0, storageComponent);
+                }
                 continue;
             }
 
